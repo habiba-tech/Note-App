@@ -1,4 +1,3 @@
-/* ---------- General ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@ body {
   justify-content: space-between;
 }
 
-/* ---------- Container ---------- */
 .container {
   max-width: 800px;
   margin: 30px auto;
@@ -23,8 +21,6 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
-/* ---------- Header ---------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -49,15 +45,11 @@ header h1 {
 #addNoteBtn:hover {
   background: #74b9ff;
 }
-
-/* ---------- Notes Container ---------- */
 #notes-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
-
-/* ---------- Note ---------- */
 .note {
   background: #f1f2f6;
   padding: 15px;
@@ -96,7 +88,7 @@ header h1 {
   background: #ff7675;
 }
 
-/* ---------- Footer ---------- */
+
 footer {
   text-align: center;
   background: #2d3436;
@@ -105,7 +97,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 600px) {
   #addNoteBtn {
     width: 100%;
