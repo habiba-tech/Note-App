@@ -3,12 +3,12 @@ const notesContainer = document.getElementById("notes-container");
 
 let notes = JSON.parse(localStorage.getItem("notes")) || [];
 
-// ✅ Save notes to localStorage
+//  Save notes to localStorage
 function saveNotes() {
   localStorage.setItem("notes", JSON.stringify(notes));
 }
 
-// ✅ Display notes on screen
+//  Display notes on screen
 function displayNotes() {
   notesContainer.innerHTML = "";
   notes.forEach((noteText, index) => {
@@ -30,19 +30,19 @@ function displayNotes() {
   });
 }
 
-// ✅ Add new note
+//  Add new note
 addNoteBtn.addEventListener("click", () => {
   notes.push("");
   saveNotes();
   displayNotes();
 });
 
-// ✅ Delete note
+//  Delete note
 function deleteNote(index) {
   notes.splice(index, 1);
   saveNotes();
   displayNotes();
 }
 
-// ✅ Initialize
+// Initialize
 displayNotes();
